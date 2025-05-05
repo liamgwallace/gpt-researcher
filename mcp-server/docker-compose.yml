@@ -8,6 +8,7 @@ services:
     container_name: researcher-mcp-server
     ports:
       - "8000:8000"
+      - "8000:8001"
     env_file:
       - .env
     volumes:

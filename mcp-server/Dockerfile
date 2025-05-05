@@ -13,4 +13,4 @@ COPY . .
 EXPOSE 8000
 
 # Start the server
-CMD ["python", "server.py"] 
+CMD ["python", "server-fastapi-mcp.py"]
