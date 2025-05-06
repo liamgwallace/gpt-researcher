@@ -10,14 +10,12 @@ import sys
 import uuid
 import logging
 from typing import Dict, Any, Optional, List
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
+load_dotenv()
 from fastapi import FastAPI, HTTPException, Query, Depends
 from pydantic import BaseModel, Field
 from fastapi_mcp import FastApiMCP
 from gpt_researcher import GPTResearcher
-
-# Load environment variables
-load_dotenv()
 
 from utils import (
     research_store,
